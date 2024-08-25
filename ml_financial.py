@@ -29,7 +29,9 @@ if not OPENAI_API_KEY:
 
 # Assign OpenAI API Key
 openai.api_key = OPENAI_API_KEY
-client = openai.OpenAI()
+client = openai.OpenAI(
+    api_key=OPENAI_API_KEY
+)
 
 # Streamlit Page Configuration
 st.set_page_config(
@@ -265,10 +267,10 @@ def on_finchat_submit(chat_input):
             st.error('Input data')
         else:    
             result =openbb_agent(user_input,openbb_pat=OPENBB_PAT, verbose=False)
-            df = convert_to_dataframe(result)
-            st.write(f'{df}')
+            # df = convert_to_dataframe(result)
+            st.write(f'{result}')
     except:
-        st.error('It seems we have issue with the response.')   
+        st.error('It seems we have no response at this time.')   
 
 
 def initialize_session_state():
@@ -335,8 +337,7 @@ def main():
     if show_basic_info:
         st.sidebar.markdown("""
         ### Basic Interactions
-        - ***Ask About Share Price of furtune 500 Companies hosted on YahooFinance***:'Whatis the share Price of {company name}'
-        - ***Ask About brief financial analysis of said companies***:'Perform a brief financial analysis of {company name}'
+        - ***Ask About Share Price of furtune 500 Companies hosted on YahooFinance***:'What is the share Price of Tesla?' : 'What is the revenue of Microsoft?'
         """)
 
     st.sidebar.markdown("---")
