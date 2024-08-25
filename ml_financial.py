@@ -40,13 +40,13 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="auto",
     menu_items={
-        "Get help": "https://github.com/Todeyem1552/ML_Financial_analyst",
-        "Report a bug": "https://github.com/Todeyem1552/ML_Financial_analyst",
+        "Get help": "https://github.com/adielaine/streamly/blob/main/streamly.py",
+        "Report a bug": "https://github.com/adielaine/streamly/blob/main/streamly.py",
         "About": """
             ## Your Personal Financial Analyst
             ### Powered using GPT-4o-mini
 
-            **GitHub**: https://github.com/Todeyem1552/ML_Financial_analyst
+            **GitHub**: https://github.com/adielaine/streamly/blob/main/streamly.py
 
             The AI Assistant named, FinChat, aims to provide the latest updates from Streamlit,
             generate code snippets for Streamlit widgets,
