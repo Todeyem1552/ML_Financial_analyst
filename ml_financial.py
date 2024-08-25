@@ -335,7 +335,7 @@ def main():
     if show_basic_info:
         st.sidebar.markdown("""
         ### Basic Interactions
-        - ***Ask About Share Price of furtune 500 Companies hosted on YahooFinance***:'What the share Price of {company name}'
+        - ***Ask About Share Price of furtune 500 Companies hosted on YahooFinance***:'Whatis the share Price of {company name}'
         - ***Ask About brief financial analysis of said companies***:'Perform a brief financial analysis of {company name}'
         """)
 
