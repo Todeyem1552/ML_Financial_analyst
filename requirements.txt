@@ -1,0 +1,9 @@
+streamlit
+streamlit-chat
+openai
+requests
+Image
+langchain
+altair<5
+openbb-agents
+openbb
